@@ -1,6 +1,7 @@
 import React from 'react';
 import './SignUp.css';
-import {Label, Input, Field, Control} from 'react-bulma-components/lib/components/form';
+// import {Label, Input, Field, Control} from 'react-bulma-components/lib/components/form';
+import TextField from '@material-ui/core/TextField';
 
 
 class SignUp extends React.Component{
@@ -24,21 +25,11 @@ class SignUp extends React.Component{
         return (
             <div className='sign_up'>
                 <h1>Registro</h1>
-                <Field>
-                    <Control>
-                        <Input onChange={this.onChange} name='name' value={this.state.name} placeholder='Text input' />
-                    </Control>
-                </Field>
-                <Field>
-                    <Control>
-                        <Input onChange={this.onChange} name='email' value={this.state.email} placeholder='E-mail input' />
-                    </Control>
-                </Field>
-                <Field>
-                    <Control>
-                        <Input onChange={this.onChange} name='idade' value={this.state.idade} placeholder='Idade input' />
-                    </Control>
-                </Field>
+                <form noValidate autoComplete="off">
+                        <TextField onChange={this.onChange} name='name' value={this.state.name} placeholder='Text input' />
+                        <TextField onChange={this.onChange} name='email' value={this.state.email} placeholder='E-mail input' />
+                        <TextField onChange={this.onChange} name='idade' value={this.state.idade} placeholder='Idade input' />
+                </form>
             </div>
         )        
     };
