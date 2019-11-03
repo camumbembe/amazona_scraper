@@ -5,7 +5,7 @@ import TextField from '@material-ui/core/TextField';
 
 
 class SignUp extends React.Component{
-    
+
     state={name:'', email:'', idade:''}
     
     onChange = (event) => {
@@ -26,9 +26,9 @@ class SignUp extends React.Component{
             <div className='sign_up'>
                 <h1>Registro</h1>
                 <form noValidate autoComplete="off">
-                        <TextField onChange={this.onChange} name='name' value={this.state.name} placeholder='Text input' />
-                        <TextField onChange={this.onChange} name='email' value={this.state.email} placeholder='E-mail input' />
-                        <TextField onChange={this.onChange} name='idade' value={this.state.idade} placeholder='Idade input' />
+                        <TextField onChange={this.onChange} name='name' value={this.state.name} label='Text input' />
+                        <TextField onChange={this.onChange} name='email' value={this.state.email} label='E-mail input' />
+                        <TextField onChange={this.onChange} name='idade' value={this.state.idade} label='Idade input' />
                 </form>
             </div>
         )        
