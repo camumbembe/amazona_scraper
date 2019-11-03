@@ -1,6 +1,5 @@
  .sign_up {
     height: 100vh;
-    
     background: #232f3e;
  }
 
@@ -9,3 +8,17 @@
      color: #f5fbe0;
  }
 
+ .sign_up .sign_teste {
+    color: #f5fbe0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.container div.input {
+    margin-bottom: 17px;
+}
